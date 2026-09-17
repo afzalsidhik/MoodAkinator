@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { MOOD_LIST, MOODS } from '../data/moods';
 import { MoodMeta } from '../types';
 import { sound } from '../services/soundEffects';
-import { ArrowLeft, Sparkles, Send, HelpCircle } from 'lucide-react';
+import { ArrowLeft, Sparkles, Send } from 'lucide-react';
 
 interface MoodSelectorProps {
   onSelectMood: (mood: MoodMeta, customText?: string) => void;

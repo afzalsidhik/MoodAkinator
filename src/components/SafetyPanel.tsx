@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { sound } from '../services/soundEffects';
-import { ShieldAlert, Phone, HeartHandshake, Wind, ArrowLeft, ExternalLink } from 'lucide-react';
+import { ShieldAlert, Phone, Wind, ArrowLeft, ExternalLink } from 'lucide-react';
 
 interface SafetyPanelProps {
   onClose: () => void;
@@ -12,7 +12,6 @@ export const SafetyPanel: React.FC<SafetyPanelProps> = ({
   onClose,
   isTriggered = false,
 }) => {
-  const [breathingPhase, setBreathingPhase] = useState<'Inhale' | 'Hold' | 'Exhale' | 'Rest'>('Inhale');
 
   const crisisResources = [
     { country: 'United States & Canada', service: 'Suicide & Crisis Lifeline', contact: 'Call or Text 988', link: 'tel:988' },

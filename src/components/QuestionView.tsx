@@ -4,7 +4,7 @@ import { Question, AnswerOption, DimensionScores, MoodMeta } from '../types';
 import { ProgressNeuralMap } from './3d/ProgressNeuralMap';
 import { EmotionalSignalMap } from './3d/EmotionalSignalMap';
 import { sound } from '../services/soundEffects';
-import { ArrowLeft, SkipForward, Sparkles, HelpCircle, ArrowRight } from 'lucide-react';
+import { ArrowLeft, SkipForward, Sparkles, ArrowRight } from 'lucide-react';
 
 interface QuestionViewProps {
   question: Question;

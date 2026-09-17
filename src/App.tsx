@@ -9,7 +9,6 @@ import {
   AnalysisResult,
   SessionHistoryItem,
 } from './types';
-import { MOODS } from './data/moods';
 import { QuestionEngine } from './services/questionEngine';
 import { EmotionAnalysisService } from './services/emotionAnalysisService';
 import { StorageService } from './services/storageService';

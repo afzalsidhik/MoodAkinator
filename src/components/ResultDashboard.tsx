@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
-import { AnalysisResult, ContributingFactor } from '../types';
+import { AnalysisResult } from '../types';
 import { EmotionalSignalMap } from './3d/EmotionalSignalMap';
 import { sound } from '../services/soundEffects';
 import {
@@ -9,7 +9,6 @@ import {
   Share2,
   RotateCcw,
   ChevronDown,
-  CheckCircle2,
   Info,
   Heart,
   Bookmark,

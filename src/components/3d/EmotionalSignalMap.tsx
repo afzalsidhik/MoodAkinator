@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { DimensionScores, DimensionId } from '../../types';
-import { Activity, ShieldAlert, Zap, Moon, Users, Heart, Brain, Compass } from 'lucide-react';
+import { Activity, ShieldAlert, Zap, Moon, Users, Heart, Brain, Compass, LucideIcon } from 'lucide-react';
 
 interface EmotionalSignalMapProps {
   scores: DimensionScores;
@@ -10,7 +10,7 @@ interface EmotionalSignalMapProps {
 interface DimensionConfig {
   id: DimensionId;
   label: string;
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: LucideIcon;
   color: string;
   angle: number; // in radians
 }
